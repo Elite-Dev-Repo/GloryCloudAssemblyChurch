@@ -1,0 +1,5 @@
+[build]
+framework = "vite"
+packageManager = "npm"
+buildCommand = "npm run build"
+outputDirectory = "dist"
