@@ -45,7 +45,7 @@ export default function GeneralOverseer() {
 
             <div className="border-l-3 border-accent pl-5 bg-cream py-4 pr-5 rounded-r-xl">
               <p className="text-gray-700 italic leading-relaxed">
-                &ldquo;... causing joy in heaven and on earth.&rdquo;<br /><span class="text-accent text-xs font-semibold">&mdash; Luke 15:7</span>
+                &ldquo;... causing joy in heaven and on earth.&rdquo;<br /><span className="text-accent text-xs font-semibold">&mdash; Luke 15:7</span>
               </p>
             </div>
 
