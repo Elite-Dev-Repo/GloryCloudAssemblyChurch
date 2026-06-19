@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight, CrossIcon } from 'lucide-react'
+import { ArrowRight, ArrowUpRight } from 'lucide-react'
 
 export default function Hero() {
   return (
