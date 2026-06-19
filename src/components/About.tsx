@@ -1,3 +1,5 @@
+import generaloverseer from '../assets/generaloverseer.jpg'
+
 export default function About() {
   return (
     <section id="about" className="py-24 sm:py-32 bg-cream">
@@ -41,9 +43,10 @@ export default function About() {
           <div className="order-1 lg:order-2">
             <div className="relative">
               <img
-                src="/src/assets/generaloverseer.jpg"
+                src={generaloverseer}
                 alt="Apostle 'Kunle Oyenekan"
                 className="w-full h-96 sm:h-[28rem] object-cover rounded-2xl shadow-xl"
+                loading="lazy"
               />
               <div className="absolute -bottom-4 -left-4 bg-accent text-white text-sm font-bold px-6 py-3 rounded-lg shadow-lg shadow-accent/30">
                 Apostle 'Kunle Oyenekan

@@ -1,13 +1,15 @@
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
+import cross from '../assets/cross.jpg'
 
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center">
       <div className="absolute inset-0">
         <img
-          src="/src/assets/cross.jpg"
+          src={cross}
           alt=""
           className="w-full h-full object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/70 to-dark/50" />
       </div>

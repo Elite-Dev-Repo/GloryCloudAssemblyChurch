@@ -1,4 +1,5 @@
 import { Phone, MapPin, MessageCircle, Video, Globe } from 'lucide-react'
+import logo from '../assets/logo.jpg'
 
 export default function Footer() {
   return (
@@ -8,9 +9,10 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/src/assets/logo.jpg"
+                src={logo}
                 alt=""
                 className="h-10 w-10 rounded-full object-cover ring-1 ring-accent/30"
+                loading="lazy"
               />
               <div>
                 <p className="text-white font-semibold">Glorycloud Assembly</p>

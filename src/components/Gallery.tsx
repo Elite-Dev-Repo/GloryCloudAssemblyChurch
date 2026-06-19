@@ -1,31 +1,38 @@
+import generaloverseer from '../assets/generaloverseer.jpg'
+import gallery1 from '../assets/gallery1.jpg'
+import goandwife from '../assets/goandwife.jpg'
+import cross from '../assets/cross.jpg'
+import logo from '../assets/logo.jpg'
+import gallery2 from '../assets/gallery2.mp4'
+
 const items = [
   {
-    src: '/src/assets/generaloverseer.jpg',
+    src: generaloverseer,
     label: 'Apostle ',
     sub: 'General Overseer',
   },
   {
-    src: '/src/assets/gallery1.jpg',
+    src: gallery1,
     label: 'Church Gathering',
     sub: 'Worship & fellowship',
   },
   {
-    src: '/src/assets/goandwife.jpg',
+    src: goandwife,
     label: 'Apostle & Family',
     sub: 'Marriage & ministry',
   },
   {
-    src: '/src/assets/cross.jpg',
+    src: cross,
     label: 'The Cross',
     sub: 'Symbol of our faith',
   },
   {
-    src: '/src/assets/logo.jpg',
+    src: logo,
     label: 'Church Logo',
     sub: 'Glorycloud Assembly',
   },
   {
-    src: '/src/assets/gallery2.mp4',
+    src: gallery2,
     isVideo: true,
     label: 'Ministry Moment',
     sub: 'A glimpse into our worship',
@@ -56,7 +63,7 @@ export default function Gallery() {
                   muted
                   loop
                   playsInline
-                  poster="/src/assets/gallery1.jpg"
+                  poster={gallery1}
                   className="w-full h-full object-cover aspect-video"
                 >
                   <source src={item.src} type="video/mp4" />

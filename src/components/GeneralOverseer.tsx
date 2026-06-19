@@ -1,3 +1,7 @@
+import generaloverseer from '../assets/generaloverseer.jpg'
+import goandwife from '../assets/goandwife.jpg'
+import logo from '../assets/logo.jpg'
+
 export default function GeneralOverseer() {
   return (
     <section id="overseer" className="py-24 sm:py-32 bg-white">
@@ -15,20 +19,23 @@ export default function GeneralOverseer() {
         <div className="grid lg:grid-cols-5 gap-10 lg:gap-16">
           <div className="lg:col-span-2 space-y-4">
             <img
-              src="/src/assets/generaloverseer.jpg"
+              src={generaloverseer}
               alt="Apostle 'Kunle Oyenekan"
               className="w-full aspect-[3/4] object-cover rounded-2xl shadow-lg"
+              loading="lazy"
             />
             <div className="grid grid-cols-2 gap-3">
               <img
-                src="/src/assets/goandwife.jpg"
+                src={goandwife}
                 alt="Apostle with his wife"
                 className="rounded-xl object-cover aspect-square shadow-md"
+                loading="lazy"
               />
               <img
-                src="/src/assets/logo.jpg"
+                src={logo}
                 alt="Church logo"
                 className="rounded-xl object-cover aspect-square shadow-md"
+                loading="lazy"
               />
             </div>
           </div>

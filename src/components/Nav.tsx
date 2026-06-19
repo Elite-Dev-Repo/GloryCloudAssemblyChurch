@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import logo from '../assets/logo.jpg'
 
 const links = [
   { label: 'Home', href: '#hero' },
@@ -18,9 +19,10 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex items-center justify-between h-16 sm:h-20">
         <a href="#hero" className="flex items-center gap-2.5">
           <img
-            src="/src/assets/logo.jpg"
+            src={logo}
             alt=""
             className="h-8 w-8 sm:h-9 sm:w-9 rounded-full object-cover"
+            loading="lazy"
           />
           <span className="text-dark font-medium text-sm tracking-wide hidden sm:block">
             Glorycloud Assembly
