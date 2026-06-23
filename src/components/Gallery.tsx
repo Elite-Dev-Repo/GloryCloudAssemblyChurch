@@ -1,43 +1,49 @@
-import generaloverseer from '../assets/generaloverseer.jpg'
-import gallery1 from '../assets/gallery1.jpg'
-import goandwife from '../assets/goandwife.jpg'
-import cross from '../assets/cross.jpg'
-import logo from '../assets/logo.jpg'
-import gallery2 from '../assets/gallery2.mp4'
+import generaloverseer from "../assets/generaloverseer.jpg";
+import gallery1 from "../assets/gallery1.jpg";
+import goandwife from "../assets/goandwife.jpg";
+import cross from "../assets/cross.jpg";
+import logo from "../assets/logo.jpg";
+import gallery2 from "../assets/gallery2.mp4";
+import gallery3 from "../assets/gallery3.jpg";
 
 const items = [
   {
     src: generaloverseer,
-    label: 'Apostle ',
-    sub: 'General Overseer',
+    label: "Apostle ",
+    sub: "General Overseer",
   },
   {
     src: gallery1,
-    label: 'Church Gathering',
-    sub: 'Worship & fellowship',
+    label: "Church Gathering",
+    sub: "Worship & fellowship",
   },
   {
     src: goandwife,
-    label: 'Apostle & Family',
-    sub: 'Marriage & ministry',
+    label: "Apostle & Family",
+    sub: "Marriage & ministry",
   },
   {
     src: cross,
-    label: 'The Cross',
-    sub: 'Symbol of our faith',
+    label: "The Cross",
+    sub: "Symbol of our faith",
   },
   {
     src: logo,
-    label: 'Church Logo',
-    sub: 'Glorycloud Assembly',
+    label: "Church Logo",
+    sub: "Glorycloud Assembly",
   },
   {
     src: gallery2,
     isVideo: true,
-    label: 'Ministry Moment',
-    sub: 'A glimpse into our worship',
+    label: "Ministry Moment",
+    sub: "A glimpse into our worship",
   },
-]
+  {
+    src: gallery3,
+    label: "Ministry Moment",
+    sub: "A glimpse into our worship",
+  },
+];
 
 export default function Gallery() {
   return (
@@ -45,8 +51,12 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <div className="flex items-end justify-between mb-12">
           <div>
-            <span className="text-accent text-xs tracking-[0.2em] font-semibold uppercase">Moments</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mt-3">Photo Gallery</h2>
+            <span className="text-accent text-xs tracking-[0.2em] font-semibold uppercase">
+              Moments
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark mt-3">
+              Photo Gallery
+            </h2>
           </div>
           <div className="w-24 h-0.5 bg-accent hidden sm:block" />
         </div>
@@ -55,7 +65,7 @@ export default function Gallery() {
           {items.map((item, i) => (
             <div
               key={i}
-              className={`relative group overflow-hidden rounded-2xl ${item.isVideo ? 'col-span-2 row-span-2' : ''}`}
+              className={`relative group overflow-hidden rounded-2xl ${item.isVideo ? "col-span-2 row-span-2" : ""}`}
             >
               {item.isVideo ? (
                 <video
@@ -86,5 +96,5 @@ export default function Gallery() {
         </div>
       </div>
     </section>
-  )
+  );
 }

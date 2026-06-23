@@ -134,7 +134,8 @@ export default function GeneralOverseer() {
                 He has hosted Singles/Married Seminar, Glory Night, Signs and
                 Wonders, Daily Devotional Program With Apostle 'Kunle Oyenekan,
                 etc. He is a member of PFN and once served as Chairman of PFN,
-                Praise Chapter.
+                Praise Chapter. He is also a member of CHRIST GLOBAL NETWORK
+                FELLOWSHIP and IJOKO REVIVAL TRANSFORMATION NETWORK.
               </p>
             </div>
           </div>
